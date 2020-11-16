@@ -347,4 +347,24 @@
     left: calc(50% - 209px / 2 + 1px);
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
   }
+
+@media (max-width: 1920) {
+  .wrapper {
+    max-width: 720px;
+    width: 80%;
+  }
+  
+  .header {
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  
+  .logo {
+    margin-top: -10px;
+    width: 190px;
+    height: 35px;
+    background: url(img/logo.svg) no-repeat;
+}
 }
