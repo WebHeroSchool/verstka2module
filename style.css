@@ -158,29 +158,22 @@
     padding-bottom: 200px;
   }
 
-  .main__title-text_hihglight {
-
-}
-
   .main__title {
     font-size: 65px;
-    margin-bottom: 50px;
+    line-height: 87px;
+    margin-bottom: -21px;
   }
 
   .main__subtitle {
-    padding-top: 49px;
+    padding-top: 55px;
     font-size: 23px;
     margin-right: 84px;
-    padding-left: -2px;
   }
 
   .main__button {
     font-size: 20px;
     margin-top: 8px;
   }
-
-
-
 }
 
 @media (max-width: 768px) {
