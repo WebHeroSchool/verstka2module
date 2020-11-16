@@ -156,7 +156,6 @@
     background-size: 800px;
     padding-top: 110px;
     padding-bottom: 200px;
-    font-size: 100px;
   }
 
   .main__title-text_hihglight {
@@ -176,7 +175,8 @@
   }
 
   .main__button {
-
+    font-size: 20px;
+    margin-top: 8px;
   }
 
 
