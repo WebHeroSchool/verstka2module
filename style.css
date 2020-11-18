@@ -176,6 +176,89 @@
   }
 }
 
+@media (max-width: 1520px) {
+  .wrapper {   
+    width: 80%;
+  }
+
+  .main {
+    padding: 0 434px 0 23px;
+    margin: 0 70px 0 50px;
+    background-size: 500px;
+  }
+
+  .logo {
+    margin-left: 76px;
+    margin-top: -3px;
+  }
+
+  .menu {
+    padding: 4px 80px 0 0;
+  }
+
+  .menu__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .main__title {
+    font-size: 50px;
+    line-height: 66px
+
+  }
+
+  .main__subtitle {
+    font-size: 18px;
+    padding: 63px 36px 0 2px;
+}
+
+  .main__button {
+    font-size: 15px;
+    margin: 0 0 2px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .wrapper {   
+    width: 80%;
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin: 0 0 0 38px;
+  }
+
+  .menu {
+    padding: 0 2px 7px 0;
+    margin-right: -165px;
+
+  }
+
+  .menu__item {
+
+  }
+
+  .main {
+    padding: 0 240px 50px 0 ;
+    margin: 0 37px;
+  }
+  
+
+  .main__title {
+
+  }
+
+  .main__subtitle {
+
+  }
+
+  .main__button {
+
+  }
+}
+
 @media (max-width: 768px) {
   .logo {
     background: no-repeat url(img/logo2.svg);
