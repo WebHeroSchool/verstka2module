@@ -114,15 +114,15 @@
   background: #0056ec;
   border-radius: 4px;
   color: white;
-  transition: opacity .5s;
+  transition: all 150ms ease-in-out;
   position: relative;
 }
 
 .main__button:hover {
-  opacity: .5;
-  box-shadow: 2px 2px white, 4px 4px #13118b;
-  top: -4px;
-  left: -4px;
+  color: #0056ec;
+  background-color: #fff;
+  box-shadow:  0 0 10px 4px #0056ec;
+  transition: box-shadow, background 2s ease .1s;
 }
 
 #checkbox {
