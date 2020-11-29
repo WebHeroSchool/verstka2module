@@ -258,7 +258,6 @@
 
 
 @media  (max-width: 1218px) {
-
   .wrapper { 
     width: 85%;
     margin: 0;
@@ -304,7 +303,7 @@
   }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 380px) {
   .wrapper {
     margin: 0;
     width: 86%;
@@ -326,15 +325,14 @@
 
   .menu-line {
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
     position: absolute;
     width: 25px;
     height: 3px;
-    left: 326px;
     top: 60px;
     background: #0056ec;
     margin-top: -20px;
+    right: 0;
+    margin-right: 25px;
   }
 
   #checkbox {
@@ -491,10 +489,9 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 228px 0 0;
+    padding: 228px 50px 0 0;
     background-size: 90%;
-    background-position-y: -30px;
-    background-position-x: 37px;
+    background-position: 140%-10%;
   }
 
   .main__title {
@@ -523,16 +520,18 @@
     max-width: 500px;
     height: 57px;
     font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
-    margin: 0 0 15px 45px;
+    margin: 0 0 15px 46px;
     display: flex;
+    word-spacing: 1px;
   }
 
 
   .main__button {
-    margin: 6px 0 0 26px;
+    margin: 8px 0 0 56px;
     width: 209px;
     height: 44px;
     left: calc(50% - 209px / 2 + 1px);
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    font-size: 13px;
   }
 }
