@@ -31,7 +31,6 @@
 }
 
 .wrapper {
-  margin: auto;
   width: 80%;
 }
 
@@ -132,6 +131,7 @@
 @media (max-width: 1920px) {
   .wrapper {   
     width: 80%;
+    margin-left: 190px;
   }
   
   .header {
@@ -153,47 +153,79 @@
 }
 
   .main {
-    background-size: 800px;
     padding-top: 110px;
     padding-bottom: 200px;
+    background-size: 51%;
+    background-position: 100% 40%;
+
   }
 
   .main__title {
     font-size: 65px;
     line-height: 87px;
-    margin-bottom: -21px;
+    margin: -3px 0 -18px 0;
   }
 
   .main__subtitle {
-    padding-top: 55px;
+    padding: 50px 56px 0 0;
     font-size: 23px;
-    margin-right: 84px;
+    margin-right: 80px;
+    line-height: 26px;
+    margin-left: -4px;
+    word-spacing: -3px;
+    max-width: 900px;
+    min-width: 450px;
   }
 
   .main__button {
     font-size: 20px;
-    margin-top: 8px;
+    margin-top: 4px;
+    padding-right: 14px;
+  }
+}
+
+@media (max-width: 1720px) {
+  .main {
+    background-size: 45%;
+    background-position: 100% 40%;
+  }
+
+  .main__title {
+    margin: 0 0px 40px 0;
+    line-height: 87px;
+    padding-right: 50px;
+    max-width: 700px;
+    min-width: 600px;
+  }
+
+  .main__subtitle {
+    padding-top: 0px;
+    margin-right: 70px;
+    padding-right: 0px;
+    max-width: 450px;
   }
 }
 
 @media (max-width: 1520px) {
-  .wrapper {   
+  .wrapper {
     width: 80%;
   }
 
   .main {
-    padding: 0 434px 0 23px;
-    margin: 0 70px 0 50px;
-    background-size: 500px;
+    padding: 3px 434px 0 30px;
+    margin: 5px 70px 0 -10px;
+    background-size: 51%;
+    background-position: 88% 30%;
   }
 
   .logo {
-    margin-left: 76px;
+    margin-left: 23px;
     margin-top: -3px;
   }
 
   .menu {
-    padding: 4px 80px 0 0;
+    padding: 1px 80px 0 0;
+    margin-right: 55px;
   }
 
   .menu__item {
@@ -203,14 +235,20 @@
 
   .main__title {
     font-size: 50px;
-    line-height: 66px
-
+    line-height: 66px;
+    max-width: 600px;
+    min-width: 300px;
+    
   }
 
   .main__subtitle {
     font-size: 18px;
-    padding: 63px 36px 0 2px;
-}
+    padding: 0 50px 0 4px;
+    line-height: 21px;
+    word-spacing: 3px;
+    max-width: 400px;
+    min-width: 250px;
+  }
 
   .main__button {
     font-size: 15px;
@@ -219,11 +257,11 @@
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media  (max-width: 1218px) {
   .wrapper { 
-    padding-right: 110px;  
     width: 85%;
     margin: 0;
+    padding-right: 110px;
   }
 
   .header {
@@ -241,11 +279,12 @@
   }
 
   .main {
-    padding: 0 240px 50px 0 ;
+    padding: 0 240px 50px 0;
     margin: 0 37px;
-    width: 700px;  
+    width: 80%;
+    background-position: 101% 60%;
+    background-size: 56%;
   }
-  
 
   .main__title {
     margin: 0 100px 0 0;
@@ -260,10 +299,11 @@
   .main__button {
     font-size: 14px;
     margin: 3px 0 2px;
+    padding-right: 25px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 380px) {
   .wrapper {
     margin: 0;
     width: 86%;
@@ -285,15 +325,14 @@
 
   .menu-line {
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
     position: absolute;
     width: 25px;
     height: 3px;
-    left: 326px;
     top: 60px;
     background: #0056ec;
     margin-top: -20px;
+    right: 0;
+    margin-right: 25px;
   }
 
   #checkbox {
@@ -311,16 +350,13 @@
   }
 
  .menu-line::before {
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    position: fixed;
-    width: 25px;
-    height: 3px;
-    left: 326px;
-    top: 60px;
-    background: #0056ec;
-    margin-top: -20px;
+  position: absolute;
+  top: -10px;
+  content: '';
+  width: 25px;
+  height: 3px;
+  display: block;
+  background: #0056ec;
   }
 
   #checkbox:checked ~ .menu-line::after {
@@ -453,10 +489,9 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 228px 0 0;
+    padding: 228px 50px 0 0;
     background-size: 90%;
-    background-position-y: -30px;
-    background-position-x: 37px;
+    background-position: 140%-10%;
   }
 
   .main__title {
@@ -485,16 +520,18 @@
     max-width: 500px;
     height: 57px;
     font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
-    margin: 0 0 15px 45px;
+    margin: 0 0 15px 46px;
     display: flex;
+    word-spacing: 1px;
   }
 
 
   .main__button {
-    margin: 6px 0 0 26px;
+    margin: 8px 0 0 56px;
     width: 209px;
     height: 44px;
     left: calc(50% - 209px / 2 + 1px);
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    font-size: 13px;
   }
 }
